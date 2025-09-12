@@ -8,7 +8,8 @@ rm -f manual.aux manual.pdf manual.idx manual.ilg manual.ind manual.lab manual.l
 pdftex manual
 # ... and build its bibliography
 bibtex manual
-# TeX the manual again to incorporate the ToC 
+# TeX the manual again to incorporate the ToC
+pdftex manual
 pdftex manual
 # ... and build the index
 ../../../doc/manualindex manual
